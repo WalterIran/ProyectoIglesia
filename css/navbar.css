@@ -1,0 +1,136 @@
+
+:root{
+    --header-height:3rem;
+    --first-color: #c5faff;
+    --first-color-light: #C4C7F5;
+    --dark-color: #0E1026;
+    --white-color: #FBFBFB;
+
+    --body-font: 'Roboto',san-serif;
+    --nav-name-font-size: 1.3rem;
+    --normal-font-size: 1.5rem;
+
+    --z-fixed:100;
+}
+
+*, ::before, ::after, i:not(".bx"){
+    box-sizing: border-box;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: 600;
+}
+
+body{
+    margin: var(--header-height) 0 0 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bd-grid{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    padding: 0 1rem;
+    background-color: #eee;
+    z-index: var(--z-fixed);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.header-logo{
+    color: var(--dark-color);
+}
+
+.header-toggle{
+    font-size:2rem;
+    cursor: pointer;
+}
+
+.nav{
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--first-color);
+    width: 80%;
+    height: 100vh;
+    padding: 2rem 0;
+    z-index: var(--z-fixed);
+    transition: .5s;
+    overflow-y: auto;
+    box-shadow: 2px 0px 4px #333;
+}
+
+.nav-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 2px 4px #333;
+    border-radius: 27px;
+    padding: .5rem 0rem;
+}
+
+.nav-img{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.nav-img img{
+    object-fit: cover;
+}
+
+.nav-name{
+    display: block;
+    font-size: var(--nav-name-font-size);
+    color: #333;
+    text-shadow: 0 0.5px 1px #eee;
+}
+
+.nav-item{
+    margin-bottom: 2rem;
+}
+
+.nav-link{
+    color: #333;
+}
+
+@media screen and (min-width: 768px){
+    :root{
+        --nav-name-font-size: 1rem;
+        --normal-font-size: 1rem;
+    }
+
+    
+}
