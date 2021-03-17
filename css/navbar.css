@@ -1,6 +1,6 @@
 
 :root{
-    --header-height:3rem;
+    --header-height:3.5rem;
     --first-color: #c5faff;
     --first-color-light: #C4C7F5;
     --dark-color: #0E1026;
@@ -8,20 +8,20 @@
 
     --body-font: 'Roboto',san-serif;
     --nav-name-font-size: 1.3rem;
-    --normal-font-size: 1.5rem;
+    --normal-font-size: 1.2rem;
 
     --z-fixed:100;
 }
 
-*, ::before, ::after, i:not(".bx"){
+*,::after,::before{
     box-sizing: border-box;
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    font-weight: 600;
 }
 
 body{
     margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: 600;
 }
 
 ul{
@@ -48,13 +48,13 @@ a{
     left: 0;
     width: 100%;
     height: var(--header-height);
-    padding: 0 1rem;
-    background-color: #eee;
+    padding: 0 0.5rem;
+    background-color: #ddd;
     z-index: var(--z-fixed);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    box-shadow: 0px 2px 4px #333;
 }
 
 .header-logo{
@@ -62,16 +62,21 @@ a{
 }
 
 .header-toggle{
-    font-size:2rem;
+    font-size: 2.3rem;
     cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav{
     position:fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     background-color: var(--first-color);
-    width: 80%;
+    width: 85%;
     height: 100vh;
     padding: 2rem 0;
     z-index: var(--z-fixed);
@@ -94,7 +99,7 @@ a{
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 2px 4px #333;
     border-radius: 27px;
-    padding: .5rem 0rem;
+    padding: .7rem 0rem;
 }
 
 .nav-img{
@@ -123,7 +128,76 @@ a{
 }
 
 .nav-link{
-    color: #333;
+    color: #666;
+    display: block;
+}
+
+.nav-link i{
+    margin-right: .5rem;
+    font-size: 1.3rem;
+}
+
+.show{
+    left: 0px;
+}
+
+.active{
+    color: #222;
+}
+
+.dropdown-link{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+}
+
+.dropdown-icon{
+    font-size: 1.3rem;
+    transition: .5s;
+    justify-self: end;
+}
+
+.dropdown-menu{
+    margin: 1rem 0 0 1rem;
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+.dropdown-item{
+    margin: 1rem 1rem;
+    font-size: 1rem;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.rotateDer{
+    animation: rotarDer 0.5s ease-out;
+}
+
+.rotateIz{
+    animation: rotarIz 0.5s ease-out;
+}
+
+@keyframes rotarDer{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotarIz{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -131,6 +205,10 @@ a{
         --nav-name-font-size: 1rem;
         --normal-font-size: 1rem;
     }
+}
 
-    
+main{
+    width: 100vw;
+    height: 500vh;
+    background-color: #333;
 }
