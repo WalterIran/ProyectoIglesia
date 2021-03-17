@@ -3,19 +3,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/b66c6a3e96.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/b66c6a3e96.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/navbar.css">
     <title>Corazón de María</title>
 </head>
-<body>
-    <header class="header">
+<body id="tipo" class="inicio">
+    <header id="header" class="header">
+        
         <a href="#" class="header-logo">Iglesia Católica Corazón de María</a>
         <div class="header-toggle">
             <i class="fas fa-bars rotateIz" id="header-toggle"></i>
-            <!-- <i class='bx bx-menu rotateIz' id="header-toggle"></i> -->
         </div>
         <nav class="nav" id="nav-menu">
             <div class="nav-content bd-grid">
@@ -34,27 +33,27 @@
                 </a>
                 <div class="nav-menu">
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="#" class="nav-link active"><i class="fas fa-church"></i> Inicio</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-church"></i> Inicio</a></li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-link"><i class="fas fa-bible"></i> Nosotros <i class='bx bxs-chevron-down dropdown-icon'></i></a>
+                            <a href="#" class="nav-link dropdown-link"><i class="fas fa-bible"></i> Nosotros <i class="fas fa-chevron-down dropdown-icon"></i></a>
                             <ul class="dropdown-menu hidden">
-                                <li class="dropdown-item"><a href="" class="nav-link"><i class='bx bx-chevron-right' ></i> ¿Quienes Somos?</a></li>
-                                <li class="dropdown-item"><a href="" class="nav-link"><i class='bx bx-chevron-right' ></i> Historia</a></li>
+                                <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> ¿Quienes Somos?</a></li>
+                                <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> Historia</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-link"><i class="fas fa-photo-video"></i> Multimedia <i class='bx bxs-chevron-down dropdown-icon'></i></a>
+                            <a href="#" class="nav-link dropdown-link"><i class="fas fa-photo-video"></i> Multimedia <i class="fas fa-chevron-down dropdown-icon"></i></a>
                             <ul class="dropdown-menu hidden">
-                                <li class="dropdown-item"><a href="" class="nav-link"><i class='bx bx-chevron-right' ></i> Galería</a></li>
-                                <li class="dropdown-item"><a href="" class="nav-link"><i class='bx bx-chevron-right' ></i> En vivo</a></li>
+                                <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> Galería</a></li>
+                                <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> En vivo</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-link"><i class="fas fa-calendar-day"></i> Eventos <i class='bx bxs-chevron-down dropdown-icon'></i></a>
+                            <a href="#" class="nav-link dropdown-link"><i class="fas fa-calendar-day"></i> Eventos <i class="fas fa-chevron-down dropdown-icon"></i></a>
                             <ul class="dropdown-menu hidden">
-                                <li class="dropdown-item"><a href="" class="nav-link"><i class='bx bx-chevron-right' ></i> Actividades</a></li>
-                                <li class="dropdown-item"><a href="" class="nav-link"><i class='bx bx-chevron-right' ></i> Horarios de Misa</a></li>
-                                <li class="dropdown-item"><a href="" class="nav-link"><i class='bx bx-chevron-right' ></i> Formaciones</a></li>
+                                <li class="dropdown-item"><a href="actividades.html" class="nav-link"><i class="fas fa-chevron-right"></i> Actividades</a></li>
+                                <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> Horarios de Misa</a></li>
+                                <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> Formaciones</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-pray"></i> Oraciones</a></li>
@@ -63,7 +62,9 @@
                 </div>
             </div>
         </nav>
+        <div id="hide"></div>
     </header>
+
     <script src="js/navbar.js"></script>
 </body>
 </html>

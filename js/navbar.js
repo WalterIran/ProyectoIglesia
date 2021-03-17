@@ -1,17 +1,95 @@
+class Navbar extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML = `
+        <header id="header" class="header">
+        
+            <a href="#" class="header-logo">Iglesia Católica Corazón de María</a>
+            <div class="header-toggle">
+                <i class="fas fa-bars rotateIz" id="header-toggle"></i>
+            </div>
+            <nav class="nav" id="nav-menu">
+                <div class="nav-content bd-grid">
+                    <a href="#" class="nav-perfil">
+                        <div class="nav-img">
+                            <img src="img/logoSinFondo.png" alt="">
+                        </div>
+                        <div>
+                            <span class="nav-name">
+                                Iglesia Católica
+                            </span>
+                            <span class="nav-name">
+                                Corazón de María
+                            </span>
+                        </div>
+                    </a>
+                    <div class="nav-menu">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-church"></i> Inicio</a></li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-link"><i class="fas fa-bible"></i> Nosotros <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                                <ul class="dropdown-menu hidden">
+                                    <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> ¿Quienes Somos?</a></li>
+                                    <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> Historia</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-link"><i class="fas fa-photo-video"></i> Multimedia <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                                <ul class="dropdown-menu hidden">
+                                    <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> Galería</a></li>
+                                    <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> En vivo</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-link"><i class="fas fa-calendar-day"></i> Eventos <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                                <ul class="dropdown-menu hidden">
+                                    <li class="dropdown-item"><a href="actividades.html" class="nav-link"><i class="fas fa-chevron-right"></i> Actividades</a></li>
+                                    <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> Horarios de Misa</a></li>
+                                    <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> Formaciones</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-pray"></i> Oraciones</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-hand-holding-heart"></i> Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="hide"></div>
+        </header>
+        `
+    }
+}
+
+customElements.define('app-navbar',Navbar);
+
+let path = window.location.pathname;
+let page = path.split('/').pop();
+
 
 document.addEventListener("DOMContentLoaded",()=>{
     const toggle = document.getElementById('header-toggle');
     const nav = document.getElementById('nav-menu');
+    const hide = document.getElementById('hide');
     const dropdown = document.getElementsByClassName('dropdown');
     const dropdownMenu = document.getElementsByClassName('dropdown-menu');
     const dropdownLinkIcon = document.querySelectorAll('.dropdown-icon');
 
     toggle.addEventListener('click',(e)=>{
         nav.classList.toggle('show');
+        hide.classList.toggle('hideAll');
         toggle.classList.toggle('fa-times');
         toggle.classList.toggle('rotateDer');
         toggle.classList.toggle('rotateIz');
+        hideBlur(hide);
     });
+
+    hide.addEventListener('click',(e)=>{
+        nav.classList.toggle('show');
+        hide.classList.toggle('hideAll');
+        toggle.classList.toggle('fa-times');
+        toggle.classList.toggle('rotateDer');
+        toggle.classList.toggle('rotateIz');
+        hideBlur(hide);
+    })
 
     for(let i = 0; i < dropdown.length; i++){
         dropdown[i].addEventListener('click',(e)=>{
@@ -26,16 +104,33 @@ document.addEventListener("DOMContentLoaded",()=>{
             }
         });
     }
+
+    const navLink = document.querySelectorAll('.nav-item > .nav-link:first-child');
+    const tipo = document.getElementById('tipo');
+
+    let j = 0;
+    j = getActualLink(tipo.className.toString(),navLink);
+    navLink[j].classList.add('active');
+
 });
 
-const navLink = document.querySelectorAll('.nav-link');
+function getActualLink(cName, navLink){
+    let j;
+    
+    for(var i = 0; i < navLink.length; i++){
 
-function linkAction(){
-    navLink.forEach(n=>n.classList.remove('active'));
-    this.classList.add('active');
+        let content = navLink[i].innerText.toLowerCase().valueOf();
+        let name = cName.valueOf();
+        
+        if(content === name){
+            j = i;
+            break;
+        }
+    }
+
+    return j;
 }
 
-navLink.forEach(n=> n.addEventListener('click',linkAction));
-
-
-
+function hideBlur(hide){
+    hide.style.display = hide.classList.contains('hideAll')?'block':'none';
+}

@@ -71,7 +71,7 @@ a{
 }
 
 .nav{
-    position:fixed;
+    position:absolute;
     top: 0;
     left: -100%;
     background-color: var(--first-color);
@@ -129,7 +129,7 @@ a{
 }
 
 .nav-link{
-    color: #666;
+    color: #777;
     display: block;
 }
 
@@ -143,7 +143,21 @@ a{
 }
 
 .active{
-    color: #222;
+    color: #111;
+}
+
+#hide{
+    display: none;
+}
+
+.hideAll{
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
 }
 
 .dropdown{
@@ -184,11 +198,11 @@ a{
 }
 
 .rotateDer{
-    animation: rotarDer 0.5s ease-out;
+    animation: rotarDer 0.5s linear;
 }
 
 .rotateIz{
-    animation: rotarIz 0.5s ease-out;
+    animation: rotarIz 0.5s linear;
 }
 
 @keyframes mostrarSubMenu{
