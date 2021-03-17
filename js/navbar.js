@@ -19,8 +19,10 @@ document.addEventListener("DOMContentLoaded",()=>{
 
             if(dropdownMenu[i].classList.contains('hidden')){
                 dropdownLinkIcon[i].style.transform = 'rotate(0deg)';
+                dropdownMenu[i].style.animation = 'ocultarSubMenu 0.1s ease-out';
             }else{
                 dropdownLinkIcon[i].style.transform = 'rotate(180deg)';
+                dropdownMenu[i].style.animation = 'mostrarSubMenu 0.3s ease-out';
             }
         });
     }
