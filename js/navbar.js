@@ -56,7 +56,7 @@ class Navbar extends HTMLElement{
             <div id="hide"></div>
         </header>
         `
-    }
+    } 
 }
 
 customElements.define('app-navbar',Navbar);
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
             if(dropdownMenu[i].classList.contains('hidden')){
                 dropdownLinkIcon[i].style.transform = 'rotate(0deg)';
-                dropdownMenu[i].style.animation = 'ocultarSubMenu 0.1s ease-out';
+                dropdownMenu[i].style.animation = 'ocultarSubMenu .2s linear';
             }else{
                 dropdownLinkIcon[i].style.transform = 'rotate(180deg)';
                 dropdownMenu[i].style.animation = 'mostrarSubMenu 0.3s ease-out';
