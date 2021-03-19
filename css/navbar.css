@@ -1,6 +1,6 @@
 
 :root{
-    --header-height:3.5rem;
+    --header-height:3rem;
     --first-color: #c5faff;
     --first-color-light: #C4C7F5;
     --dark-color: #0E1026;
@@ -48,7 +48,7 @@ a{
     width: 100%;
     height: var(--header-height);
     padding: 0 0.5rem;
-    background-color: #ddd;
+    background-color: #fdfdaf;
     z-index: var(--z-fixed);
     display: flex;
     justify-content: space-between;
@@ -133,7 +133,7 @@ a{
     display: block;
 }
 
-.nav-link i{
+.nav-link i:first-child{
     margin-right: .5rem;
     font-size: 1.3rem;
 }
@@ -152,7 +152,7 @@ a{
 
 .hideAll{
     position: absolute;
-    top: 3.5rem;
+    top: var(--header-height);
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -165,10 +165,13 @@ a{
 }
 
 .dropdown-link{
-    display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
+    display: flex;
     z-index: 2;
     position: sticky;
+}
+
+.dropdown-link span{
+    flex: 100%;
 }
 
 .dropdown-icon{
@@ -218,34 +221,121 @@ a{
 @keyframes ocultarSubMenu{
     from{
         opacity: 1;
-        top: 0%;
+        transform: translateX(0%);
     }to{
         opacity: 0;
-        top:-100%;
+        transform: translateX(-100%);
     }
 }
 
 @keyframes rotarDer{
     from{
-        transform: rotate(0deg);
+        transform: rotate(0deg) scale(0.5);
+        opacity: 0;
     }
     to{
-        transform: rotate(360deg);
+        transform: rotate(360deg) scale(1);
+        opacity: 1;
     }
 }
 
 @keyframes rotarIz{
     from{
-        transform: rotate(0deg);
+        transform: rotate(0deg) scale(0.5);
+        opacity: 0;
     }
     to{
-        transform: rotate(-360deg);
+        transform: rotate(-360deg) scale(1);
+        opacity: 1;
     }
 }
 
-@media screen and (min-width: 768px){
-    :root{
-        --nav-name-font-size: 1rem;
-        --normal-font-size: 1rem;
+/* Media query for large screen */
+
+@media screen and (min-width: 1025px){
+    .header{
+        justify-content: flex-end;
+        background-color: #BEF5F5;
+        border-bottom: 1px solid #000;
     }
+    
+    .header-logo{
+        display: none;
+    }
+
+    .nav{
+        padding: .5rem;
+        left: 0;
+        top: var(--header-height);
+        width: 100%;
+        height: 3rem;
+        background-color: #BEF5F5;
+        z-index: 999;
+        overflow-y: unset;
+        box-shadow: 0px 2px 2px #000;
+    }
+
+    .nav-content{
+        width: 100%;
+        height: 100%;
+    }
+
+    .bd-grid{
+        max-width: none;
+        display: block;
+        margin: 0;
+    }
+
+    .nav-menu{
+        height: 100%;
+    }
+
+    .nav-perfil{
+        position: absolute;
+        background-color: #BEF5F5;
+        width: 5rem;
+        height: 5rem;
+        padding: 0;
+        margin: 0;
+        border-radius: 100%;
+        top: -2.5rem;
+        left: calc(50% - 2.5rem);
+    }
+
+    .nav-img{
+        width: 5rem;
+        height: 5rem;
+        margin: 0;
+    }
+
+    .nav-perfil div:last-child{
+        display: none;
+    }
+
+    .nav-list{
+        display: flex;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .nav-item{
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .nav-link{
+        color: #333;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dropdown-icon{
+        margin-left: .5rem;
+    }
+
+    .nav-item:first-child,.nav-item i:first-child, .nav-item:last-child{
+        display: none;
+    }
+
 }
