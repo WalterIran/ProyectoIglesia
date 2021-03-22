@@ -1,17 +1,18 @@
 class Navbar extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
-        <header id="header" class="header">
-        
-            <a href="#" class="header-logo">Iglesia Católica Corazón de María</a>
+            <header id="header" class="header">
+            <div class="nav-img">
+                <img src="img/LogoSinFondo.png" alt="">
+            </div>
             <div class="header-toggle">
                 <i class="fas fa-bars rotateIz" id="header-toggle"></i>
             </div>
             <nav class="nav" id="nav-menu">
                 <div class="nav-content bd-grid">
-                    <a href="#" class="nav-perfil">
+                    <a href="index.html" class="nav-perfil">
                         <div class="nav-img">
-                            <img src="img/logoSinFondo.png" alt="">
+                            <img src="img/LogoSinFondo.png" alt="">
                         </div>
                         <div>
                             <span class="nav-name">
@@ -24,31 +25,31 @@ class Navbar extends HTMLElement{
                     </a>
                     <div class="nav-menu">
                         <ul class="nav-list">
-                            <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-church"></i> Inicio</a></li>
+                            <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-church"></i><span>Inicio</span></a></li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-link"><i class="fas fa-bible"></i> Nosotros <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                                <a href="#" class="nav-link dropdown-link"><i class="fas fa-bible"></i><span>Nosotros</span> <i class="fas fa-chevron-down dropdown-icon"></i></a>
                                 <ul class="dropdown-menu hidden">
                                     <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> ¿Quienes Somos?</a></li>
                                     <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> Historia</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-link"><i class="fas fa-photo-video"></i> Multimedia <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                                <a href="#" class="nav-link dropdown-link"><i class="fas fa-photo-video"></i><span>Multimedia</span> <i class="fas fa-chevron-down dropdown-icon"></i></a>
                                 <ul class="dropdown-menu hidden">
                                     <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> Galería</a></li>
                                     <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> En vivo</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-link"><i class="fas fa-calendar-day"></i> Eventos <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                                <a href="#" class="nav-link dropdown-link"><i class="fas fa-calendar-day"></i><span>Eventos</span> <i class="fas fa-chevron-down dropdown-icon"></i></a>
                                 <ul class="dropdown-menu hidden">
                                     <li class="dropdown-item"><a href="actividades.html" class="nav-link"><i class="fas fa-chevron-right"></i> Actividades</a></li>
                                     <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> Horarios de Misa</a></li>
                                     <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> Formaciones</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-pray"></i> Oraciones</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-hand-holding-heart"></i> Contacto</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-pray"></i><span>Oraciones</span></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-hand-holding-heart"></i><span>Contacto</span></a></li>
                         </ul>
                     </div>
                 </div>
