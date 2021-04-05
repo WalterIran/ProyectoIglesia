@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b66c6a3e96.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <title>Corazón de María</title>
+</head>
+
+<body id="tipo" class="contacto">
+    <app-navbar></app-navbar>
+    <header>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <div class="row">
+            <div class="column">
+                <form action="contacto.html" method="POST" id="formContacto">
+                    <div>
+                        <input type="text" name="txtName" id="txtName" placeholder="Nombre" />
+                        <span class="error hidden" id="txtNameError"></span>
+                    </div>
+                    <div>
+                        <input type="email" name="txtEmail" id="txtEmail" placeholder="Correo Electrónico" />
+                        <span class="error hidden" id="txtEmailError"></span>
+                    </div>
+                    <div>
+                        <input type="text" name="txtMsg" id="txtMsg" placeholder="Mensaje" />
+                        <span class="error hidden" id="txtMsgError"></span>
+                    </div>
+                    <div class="btn">
+                        <button name="btnEnviar" id="btnEnviar" class="hidden">Enviar Mensaje</button>
+                    </div>
+                </form>
+            </div>
+            <div class="column social-media">
+                <div>
+                    <i class="fab fa-facebook"></i>
+                    <a id="facebook">Iglesia Católica Corazón de María</a>
+                </div>
+                <div>
+                    <i class="fas fa-phone-alt"></i>
+                    <a>+504 9982-6008</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>Donaciones</h2>
+        </div>
+        <section class="parallax">
+            <div class="container">
+                <p>Con tu maravillosa ayuda podemos continuar con las obras pastorales y mantenimiento de nuestro templo.</p>
+                <p>¡GRACIAS POR AYUDARNOS!</p>
+                <p>Iglesia Católica Corazón de María</p>
+                <ul>
+                    <li>Banco X. 0101010101</li>
+                    <li>Banco Y. 0101010101</li>
+                    <li>Banco Z. 0101010101</li>
+                </ul>
+                <p>Si deseas apoyar con un donativo diferente envia un correo:<br/>corazonmaria@iglesia.com</p>
+            </div>
+        </section>
+        <div>
+            <h2>Ubicación</h2>
+            <div class="location">
+                <h3>Iglesia Católica Corazón de María</h2>
+                    <p>Residencial Francisco Morazan, Comayaguela, Honduras</p>
+            </div>
+        </div>
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.172414851421!2d-87.23725398465128!3d14.066993993699958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6f97eed2aeeb5d%3A0x4d48300c9316df7f!2sIglesia%20Cat%C3%B3lica%20Coraz%C3%B3n%20de%20Mar%C3%ADa!5e0!3m2!1ses!2shn!4v1617075220429!5m2!1ses!2shn"></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>Derechos Reservados &copy</p>
+    </footer>
+    <script src="js/navbar.js"></script>
+    <script src="js/contacto.js"></script>
+</body>
+
+</html>
