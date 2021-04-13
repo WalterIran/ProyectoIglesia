@@ -1,0 +1,670 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --title_backcolor: #fff2f2;
+    --title_fontcolor: #46d3e6;
+    --mistery_color: #3a19f7;
+    --mistery_size: 2.3rem;
+    --hailmary_color: #f52b2b;
+    --hailmary_size: 1.8rem;
+    --distance: 2rem;
+    --container-heigt: 5rem;
+}
+
+body {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: linear-gradient( rgba(247, 208, 208, 0.5), rgba(0, 0, 0, 0.5)), url('../img/FondoVirgenMaria.png');
+}
+
+header h1 {
+    margin: 0px;
+    padding: 0.5rem;
+    background-color: var(--title_backcolor);
+    color: var(--title_fontcolor);
+    text-align: center;
+}
+
+.rosario {
+    padding: 0rem;
+    margin: 0.5rem;
+}
+
+.container-general {
+    position: relative;
+    height: calc(100vh - var(--container-heigt));
+    width: calc(100vw - 1rem);
+}
+
+.controles-rosario {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.controles-rosario div {
+    margin: 1rem;
+    border-radius: 50%;
+}
+
+.controles-rosario img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.controles-rosario div:hover {
+    background-color: #333;
+    border-radius: 50%;
+    box-shadow: 4px 1px #333;
+    transition: 1s ease;
+}
+
+.container-rosario {
+    height: 60vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.misterio {
+    margin: 0px;
+    padding: 5px;
+    width: var(--mistery_size);
+    height: var(--mistery_size);
+    border-radius: 50%;
+    background: var(--mistery_color);
+}
+
+.AveMaria {
+    width: var(--hailmary_size);
+    height: var(--hailmary_size);
+    border-radius: 50%;
+    background: var(--hailmary_color);
+}
+
+.VirtudesTeo {
+    width: 50px;
+}
+
+.container-misterios {
+    width: 300px;
+    height: 350px;
+}
+
+.textoOraciones {
+    height: 20vh;
+    text-align: center;
+}
+
+.textoOraciones p {
+    font-size: 1.5rem;
+    position: absolute;
+}
+
+#tx-persinarse {
+    opacity: 0;
+}
+
+#tx-credo {
+    opacity: 0;
+}
+
+#tx-padre {
+    opacity: 0;
+    font-size: 1.3rem;
+    margin: 5px;
+}
+
+#tx-avemaria {
+    opacity: 0;
+}
+
+#tx-gloria {
+    opacity: 0;
+}
+
+.imagenesMisterios {
+    position: absolute;
+    top: 15%;
+    left: 17%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.imagenesMisterios img {
+    position: absolute;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+.Grupo-Misterios {
+    width: 200px;
+    height: 20vh;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.Grupo-Misterios p {
+    position: absolute;
+}
+
+#Segundo_M {
+    visibility: hidden;
+    position: absolute;
+}
+
+#Tercero_M {
+    visibility: hidden;
+    position: absolute;
+}
+
+#Cuarto_M {
+    visibility: hidden;
+    position: absolute;
+}
+
+#Quinto_M {
+    visibility: hidden;
+    position: absolute;
+}
+
+#virtudes .misterio:nth-child(1) {
+    transform: translateY(6.5rem);
+    margin: auto;
+}
+
+#virtudes .AveMaria:nth-child(2) {
+    margin: auto;
+    transform: translateY(calc(var(--distance)* 1));
+}
+
+#virtudes .AveMaria:nth-child(3) {
+    margin: auto;
+    transform: translateY(calc(var(--distance)* -1));
+}
+
+#virtudes .AveMaria:nth-child(4) {
+    margin: auto;
+    transform: translateY(calc(var(--distance)* -3));
+}
+
+#Primero_M .misterio:nth-child(1) {
+    position: relative;
+    top: 88%;
+    margin: auto;
+}
+
+#Primero_M .AveMaria:nth-child(2) {
+    position: relative;
+    top: 63%;
+    left: 30%;
+}
+
+#Primero_M .AveMaria:nth-child(3) {
+    position: relative;
+    top: 41%;
+    left: 12%;
+}
+
+#Primero_M .AveMaria:nth-child(4) {
+    position: relative;
+    top: 10%;
+    left: 5%;
+}
+
+#Primero_M .AveMaria:nth-child(5) {
+    position: relative;
+    top: -20%;
+    left: 12%;
+}
+
+#Primero_M .AveMaria:nth-child(6) {
+    position: relative;
+    top: -40%;
+    left: 36%;
+}
+
+#Primero_M .AveMaria:nth-child(7) {
+    position: relative;
+    top: -48%;
+    left: 60%;
+}
+
+#Primero_M .AveMaria:nth-child(8) {
+    position: relative;
+    top: -45%;
+    left: 80%;
+}
+
+#Primero_M .AveMaria:nth-child(9) {
+    position: relative;
+    top: -31%;
+    left: 86%;
+}
+
+#Primero_M .AveMaria:nth-child(10) {
+    position: relative;
+    top: -18%;
+    left: 75%;
+}
+
+#Primero_M .AveMaria:nth-child(11) {
+    position: relative;
+    top: -11%;
+    left: 60%;
+}
+
+@media (min-width:1024px) {
+    header h1 {
+        font-size: 4rem;
+    }
+    .container-general {
+        position: relative;
+        height: calc(100vh - var(--container-heigt)*1.6);
+        max-width: calc(100vw - 2.6rem);
+        /*max-width: 188rem;*/
+    }
+    .controles-rosario {
+        position: relative;
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    .controles-rosario div {
+        margin: 1rem;
+        width: 150px;
+        height: 150px;
+    }
+    .controles-rosario img {
+        border-radius: 5%;
+        width: 100%;
+        height: 100%;
+    }
+    .controles-rosario div:hover {
+        background-color: #999898;
+        border-radius: 50%;
+        box-shadow: 4px 2px #333;
+        transition: 0.5s ease;
+    }
+    .container-rosario {
+        width: 70%;
+        height: 70vh;
+        margin-left: 30%;
+    }
+    .misterio {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .AveMaria {
+        width: 3rem;
+        height: 3rem;
+    }
+    .container-misterios {
+        position: absolute;
+        margin-right: 50%;
+    }
+    #virtudes {
+        position: absolute;
+        top: 30%;
+        left: 65.5%;
+        width: 150px;
+        height: 350px;
+    }
+    #Primero_M {
+        top: 5%;
+        left: 65%;
+        width: 970px;
+        height: 300px;
+    }
+    #Segundo_M {
+        top: 22%;
+        left: 82%;
+        width: 450px;
+        height: 650px;
+        visibility: visible;
+    }
+    #Tercero_M {
+        top: 70%;
+        left: 53%;
+        width: 920px;
+        height: 300px;
+        visibility: visible;
+    }
+    #Cuarto_M {
+        top: 30%;
+        left: 38%;
+        width: 450px;
+        height: 650px;
+        visibility: visible;
+    }
+    #Quinto_M {
+        top: 5%;
+        left: 36%;
+        width: 900px;
+        height: 300px;
+        visibility: visible;
+    }
+    #virtudes .misterio:nth-child(1) {
+        position: relative;
+        transform: translateY(16rem);
+        margin: auto;
+    }
+    #virtudes .AveMaria:nth-child(2) {
+        margin: auto;
+        transform: translateY(7.5rem);
+    }
+    #virtudes .AveMaria:nth-child(3) {
+        margin: auto;
+        transform: translateY(-0.3rem);
+    }
+    #virtudes .AveMaria:nth-child(4) {
+        margin: auto;
+        transform: translateY(-8rem);
+    }
+    #Primero_M .misterio:nth-child(1) {
+        left: -40%;
+        top: 70%;
+    }
+    #Primero_M .AveMaria:nth-child(2) {
+        top: 25%;
+        left: 12%;
+    }
+    #Primero_M .AveMaria:nth-child(3) {
+        top: -12%;
+        left: 20%;
+    }
+    #Primero_M .AveMaria:nth-child(4) {
+        top: -43%;
+        left: 29%;
+    }
+    #Primero_M .AveMaria:nth-child(5) {
+        top: -69%;
+        left: 39%;
+    }
+    #Primero_M .AveMaria:nth-child(6) {
+        top: -90%;
+        left: 50%;
+    }
+    #Primero_M .AveMaria:nth-child(7) {
+        top: -103%;
+        left: 61%;
+    }
+    #Primero_M .AveMaria:nth-child(8) {
+        top: -110%;
+        left: 72%;
+    }
+    #Primero_M .AveMaria:nth-child(9) {
+        top: -112%;
+        left: 82%;
+    }
+    #Primero_M .AveMaria:nth-child(10) {
+        top: -110%;
+        left: 90%;
+    }
+    #Primero_M .AveMaria:nth-child(11) {
+        top: -105%;
+        left: 95%;
+    }
+    #Segundo_M .misterio:nth-child(1) {
+        position: relative;
+        left: 95%;
+        top: 5%;
+    }
+    #Segundo_M .AveMaria:nth-child(2) {
+        position: relative;
+        top: 8%;
+        left: 100%;
+    }
+    #Segundo_M .AveMaria:nth-child(3) {
+        position: relative;
+        top: 11%;
+        left: 99%;
+    }
+    #Segundo_M .AveMaria:nth-child(4) {
+        position: relative;
+        top: 15%;
+        left: 95%;
+    }
+    #Segundo_M .AveMaria:nth-child(5) {
+        position: relative;
+        top: 18%;
+        left: 90%;
+    }
+    #Segundo_M .AveMaria:nth-child(6) {
+        position: relative;
+        top: 20%;
+        left: 82%;
+    }
+    #Segundo_M .AveMaria:nth-child(7) {
+        position: relative;
+        top: 22%;
+        left: 71%;
+    }
+    #Segundo_M .AveMaria:nth-child(8) {
+        position: relative;
+        top: 23%;
+        left: 58%;
+    }
+    #Segundo_M .AveMaria:nth-child(9) {
+        position: relative;
+        top: 23%;
+        left: 45%;
+    }
+    #Segundo_M .AveMaria:nth-child(10) {
+        position: relative;
+        top: 23%;
+        left: 29%;
+    }
+    #Segundo_M .AveMaria:nth-child(11) {
+        position: relative;
+        top: 24%;
+        left: 12%;
+    }
+    #Tercero_M .misterio:nth-child(1) {
+        position: relative;
+        top: 18%;
+        left: 93%;
+    }
+    #Tercero_M .AveMaria:nth-child(2) {
+        position: relative;
+        top: 20%;
+        left: 85%;
+    }
+    #Tercero_M .AveMaria:nth-child(3) {
+        position: relative;
+        top: 22%;
+        left: 75%;
+    }
+    #Tercero_M .AveMaria:nth-child(4) {
+        position: relative;
+        top: 25%;
+        left: 66%;
+    }
+    #Tercero_M .AveMaria:nth-child(5) {
+        position: relative;
+        top: 27%;
+        left: 57%;
+    }
+    #Tercero_M .AveMaria:nth-child(6) {
+        position: relative;
+        top: 30%;
+        left: 47%;
+    }
+    #Tercero_M .AveMaria:nth-child(7) {
+        position: relative;
+        top: -5%;
+        left: 36%;
+    }
+    #Tercero_M .AveMaria:nth-child(8) {
+        position: relative;
+        top: -42%;
+        left: 26%;
+    }
+    #Tercero_M .AveMaria:nth-child(9) {
+        position: relative;
+        top: -80%;
+        left: 15%;
+    }
+    #Tercero_M .AveMaria:nth-child(10) {
+        position: relative;
+        top: -115%;
+        left: 6%;
+    }
+    #Tercero_M .AveMaria:nth-child(11) {
+        position: relative;
+        top: -150%;
+        left: -3%;
+    }
+    #Cuarto_M .misterio:nth-child(1) {
+        position: relative;
+        top: 80%;
+        left: 80%;
+    }
+    #Cuarto_M .AveMaria:nth-child(2) {
+        position: relative;
+        top: 64%;
+        left: 65%;
+    }
+    #Cuarto_M .AveMaria:nth-child(3) {
+        position: relative;
+        top: 50%;
+        left: 50%;
+    }
+    #Cuarto_M .AveMaria:nth-child(4) {
+        position: relative;
+        top: 34%;
+        left: 35%;
+    }
+    #Cuarto_M .AveMaria:nth-child(5) {
+        position: relative;
+        top: 18%;
+        left: 24%;
+    }
+    #Cuarto_M .AveMaria:nth-child(6) {
+        position: relative;
+        top: 2%;
+        left: 14%;
+    }
+    #Cuarto_M .AveMaria:nth-child(7) {
+        position: relative;
+        top: -15%;
+        left: 6%;
+    }
+    #Cuarto_M .AveMaria:nth-child(8) {
+        position: relative;
+        top: -32%;
+        left: 2%;
+    }
+    #Cuarto_M .AveMaria:nth-child(9) {
+        position: relative;
+        top: -49%;
+        left: -1%;
+    }
+    #Cuarto_M .AveMaria:nth-child(10) {
+        position: relative;
+        top: -66%;
+        left: -1%;
+    }
+    #Cuarto_M .AveMaria:nth-child(11) {
+        position: relative;
+        top: -82%;
+        left: -1%;
+    }
+    #Quinto_M .misterio:nth-child(1) {
+        position: relative;
+        top: 75%;
+        left: 8%;
+    }
+    #Quinto_M .AveMaria:nth-child(2) {
+        position: relative;
+        top: 36%;
+        left: 12%;
+    }
+    #Quinto_M .AveMaria:nth-child(3) {
+        position: relative;
+        top: 2%;
+        left: 17%;
+    }
+    #Quinto_M .AveMaria:nth-child(4) {
+        position: relative;
+        top: -32%;
+        left: 25%;
+    }
+    #Quinto_M .AveMaria:nth-child(5) {
+        position: relative;
+        top: -61%;
+        left: 35%;
+    }
+    #Quinto_M .AveMaria:nth-child(6) {
+        position: relative;
+        top: -87%;
+        left: 46%;
+    }
+    #Quinto_M .AveMaria:nth-child(7) {
+        position: relative;
+        top: -105%;
+        left: 58%;
+    }
+    #Quinto_M .AveMaria:nth-child(8) {
+        position: relative;
+        top: -116%;
+        left: 72%;
+    }
+    #Quinto_M .AveMaria:nth-child(9) {
+        position: relative;
+        top: -118%;
+        left: 85%;
+    }
+    #Quinto_M .AveMaria:nth-child(10) {
+        position: relative;
+        top: -117%;
+        left: 95%;
+    }
+    #Quinto_M .AveMaria:nth-child(11) {
+        position: relative;
+        top: -113%;
+        left: 102%;
+    }
+    /*Texto*/
+    .Grupo-Misterios {
+        width: 30vw;
+        top: 25%;
+        left: 0%;
+    }
+    .Grupo-Misterios p {
+        font-size: 5rem;
+        color: oldlace;
+    }
+    /* Imagen*/
+    .imagenesMisterios {
+        top: 15%;
+        left: 50%;
+    }
+    .imagenesMisterios img {
+        width: 1000px;
+        height: 1000px;
+    }
+    /*Oraciones*/
+    .textoOraciones {
+        position: absolute;
+        height: 45vh;
+        width: 30vw;
+        top: 50%;
+    }
+    .textoOraciones p {
+        font-size: 5rem;
+        color: oldlace;
+    }
+    #tx-padre {
+        font-size: 4.3rem;
+        margin: 5px;
+    }
+}
