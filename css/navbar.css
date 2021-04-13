@@ -265,7 +265,7 @@ a{
         display: none !important;
     }
     
-    .header>.nav-img{
+    .header>.nav-img, .nav-img>a{
         position: fixed;
         left: calc(50% - var(--header-height) * 1.7 / 2);
         height: calc(var(--header-height) * 1.7);
