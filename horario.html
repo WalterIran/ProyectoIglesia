@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b66c6a3e96.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/main.css">
+    <link rel="stylesheet" href="css/horario.css">
+    <title>Corazón de María</title>
+</head>
+
+<body id="tipo" class="horario">
+    <app-navbar></app-navbar>
+    <header>
+    </header>
+    <main>
+        <div class="row">
+            <div class="column">
+                <section class="carousel">
+                    <section class="carousel-track-container">
+                        <section class="carousel-track">
+                            <div class="carousel-slide">
+                                <picture>
+                                    <source srcset="img/principal_large.svg" media="(min-width:1025px)" />
+                                    <source srcset="img/principal_large.svg" media="(min-width:640px)" />
+                                    <img alt="Horario" data-src="img/principal_small.svg" />
+                                </picture>
+                            </div>
+                            <div class="carousel-slide">
+                                <picture>
+                                    <source data-srcset="img/abril_large.svg" media="(min-width:1025px)" />
+                                    <source data-srcset="img/abril_large.svg" media="(min-width:640px)" />
+                                    <img alt="Horario de Abril" src="img/abril_small.svg" />
+                                </picture>
+                            </div>
+                            <div class="carousel-slide">
+                                <picture>
+                                    <source data-srcset="img/mayo_large.svg" media="(min-width:1025px)" />
+                                    <source data-srcset="img/mayo_large.svg" media="(min-width:640px)" />
+                                    <img alt="Horario de Mayo" data-src="img/mayo_small.svg" />
+                                </picture>
+                            </div>
+                            <div class="carousel-slide">
+                                <picture>
+                                    <source data-srcset="img/junio_large.svg" media="(min-width:1025px)" />
+                                    <source data-srcset="img/mayo_large.svg" media="(min-width:640px)" />
+                                    <img alt="Horario de Junio" data-src="img/junio_small.svg" />
+                                </picture>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+                <div class="carousel-button">
+                    <div class="prev"><img src="img/left.svg" alt="" /></div>
+                    <div class="next"><img src="img/right.svg" alt="" /></div>
+                </div>
+                <div class="dotsPosition"></div>
+            </div>
+            <div class="column">
+                <h1>REGISTRAR MI VISITA</h1>
+                <form action="horario.html" method="POST" id="formVisita">
+                    <div>
+                        <label for="txtId">Identidad:</label>
+                        <input type="text" name="txtId" id="txtId" placeholder="Identidad" />
+                        <span class="error hidden" id="txtIdError"></span>
+                    </div>
+                    <div>
+                        <label for="txtName">Nombre:</label>
+                        <input type="text" name="txtName" id="txtName" placeholder="Nombre" />
+                        <span class="error hidden" id="txtNameError"></span>
+                    </div>
+                    <div>
+                        <label for="txtTel">Teléfono:</label>
+                        <input type="tel" name="txtTel" id="txtTel" placeholder="Teléfono" />
+                        <span class="error hidden" id="txtTelError"></span>
+                    </div>
+                    <div>
+                        <label for="datefield">Fecha:</label>
+                        <input type="date" id="datefield" />
+                    </div>
+                    <div class="btn">
+                        <button name="btnRegistrar" id="btnRegistrar" class="hidden">Registrar mi Visita</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!--<p>Derechos Reservados &copy</p>-->
+    </footer>
+    <script src="js/navbar.js"></script>
+    <script src="js/horario.js"></script>
+</body>
+
+</html>
