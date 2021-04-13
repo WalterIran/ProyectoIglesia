@@ -4,16 +4,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/heart.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b66c6a3e96.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/main.css">
     <link rel="stylesheet" href="css/horario.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <title>Corazón de María</title>
 </head>
 
-<body id="tipo" class="horario">
+<body id="tipo" class="eventos">
     <app-navbar></app-navbar>
     <header>
     </header>
@@ -66,24 +67,24 @@
                     <div>
                         <label for="txtId">Identidad:</label>
                         <input type="text" name="txtId" id="txtId" placeholder="Identidad" />
-                        <span class="error hidden" id="txtIdError"></span>
+                        <span class="formSpan error hiddenk" id="txtIdError"></span>
                     </div>
                     <div>
                         <label for="txtName">Nombre:</label>
                         <input type="text" name="txtName" id="txtName" placeholder="Nombre" />
-                        <span class="error hidden" id="txtNameError"></span>
+                        <span class="formSpan error hiddenk" id="txtNameError"></span>
                     </div>
                     <div>
                         <label for="txtTel">Teléfono:</label>
                         <input type="tel" name="txtTel" id="txtTel" placeholder="Teléfono" />
-                        <span class="error hidden" id="txtTelError"></span>
+                        <span class="formSpan error hiddenk" id="txtTelError"></span>
                     </div>
                     <div>
                         <label for="datefield">Fecha:</label>
                         <input type="date" id="datefield" />
                     </div>
                     <div class="btn">
-                        <button name="btnRegistrar" id="btnRegistrar" class="hidden">Registrar mi Visita</button>
+                        <button name="btnRegistrar" id="btnRegistrar" class="hiddenk">Registrar mi Visita</button>
                     </div>
                 </form>
             </div>

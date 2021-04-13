@@ -30,12 +30,12 @@ document.addEventListener("DOMContentLoaded", function() {
         var value = e.target.value;
         if (!emailRegex.test(value)) {
             txtEmail.classList.add("error");
-            txtEmailError.classList.remove("hidden");
+            txtEmailError.classList.remove("hiddenk");
             txtEmailError.innerHTML = "Debe ingresar un correo electrónico válido"
             emailError = true;
         } else {
             txtEmail.classList.remove("error");
-            txtEmailError.classList.add("hidden");
+            txtEmailError.classList.add("hiddenk");
             txtEmailError.innerHTML = ""
             emailError = false;
         }
@@ -46,12 +46,12 @@ document.addEventListener("DOMContentLoaded", function() {
         var value = e.target.value;
         if (!nameRegex.test(value)) {
             txtName.classList.add("error");
-            txtNameError.classList.remove("hidden");
+            txtNameError.classList.remove("hiddenk");
             txtNameError.innerHTML = "Por favor, verifique los datos ingresados."
             nameError = true;
         } else {
             txtName.classList.remove("error");
-            txtNameError.classList.add("hidden");
+            txtNameError.classList.add("hiddenk");
             txtNameError.innerHTML = ""
             nameError = false;
         }
@@ -62,12 +62,12 @@ document.addEventListener("DOMContentLoaded", function() {
         var value = e.target.value;
         if (emptyRegex.test(value)) {
             txtMsg.classList.add("error");
-            txtMsgError.classList.remove("hidden");
+            txtMsgError.classList.remove("hiddenk");
             txtMsgError.innerHTML = "Por favor, verifique los datos ingresados."
             msgError = true;
         } else {
             txtMsg.classList.remove("error");
-            txtMsgError.classList.add("hidden");
+            txtMsgError.classList.add("hiddenk");
             txtMsgError.innerHTML = ""
             msgError = false;
         }
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function enableButton() {
         if (!emailError && !nameError && !msgError) {
-            btnEnviar.classList.remove("hidden");
+            btnEnviar.classList.remove("hiddenk");
         }
     }
 });

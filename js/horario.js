@@ -125,12 +125,12 @@ document.addEventListener("DOMContentLoaded", function() {
         var value = e.target.value;
         if (!idRegex.test(value)) {
             txtIdError.classList.add("error");
-            txtIdError.classList.remove("hidden");
+            txtIdError.classList.remove("hiddenk");
             txtIdError.innerHTML = "Por favor, verifique los datos ingresados."
             idError = true;
         } else {
             txtId.classList.remove("error");
-            txtIdError.classList.add("hidden");
+            txtIdError.classList.add("hiddenk");
             txtIdError.innerHTML = ""
             idError = false;
         }
@@ -141,12 +141,12 @@ document.addEventListener("DOMContentLoaded", function() {
         var value = e.target.value;
         if (!nameRegex.test(value)) {
             txtName.classList.add("error");
-            txtNameError.classList.remove("hidden");
+            txtNameError.classList.remove("hiddenk");
             txtNameError.innerHTML = "Por favor, verifique los datos ingresados."
             nameError = true;
         } else {
             txtName.classList.remove("error");
-            txtNameError.classList.add("hidden");
+            txtNameError.classList.add("hiddenk");
             txtNameError.innerHTML = ""
             nameError = false;
         }
@@ -157,12 +157,12 @@ document.addEventListener("DOMContentLoaded", function() {
         var value = e.target.value;
         if (!telRegex.test(value)) {
             txtTel.classList.add("error");
-            txtTelError.classList.remove("hidden");
+            txtTelError.classList.remove("hiddenk");
             txtTelError.innerHTML = "Por favor, verifique los datos ingresados."
             telError = true;
         } else {
             txtTel.classList.remove("error");
-            txtTelError.classList.add("hidden");
+            txtTelError.classList.add("hiddenk");
             txtTelError.innerHTML = ""
             telError = false;
         }
@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function enableButton() {
         if (!idError && !nameError && !telError) {
-            btnVisita.classList.remove("hidden");
+            btnVisita.classList.remove("hiddenk");
         }
     }
 });

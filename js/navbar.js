@@ -36,20 +36,20 @@ class Navbar extends HTMLElement{
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-link"><i class="fas fa-photo-video"></i><span>Multimedia</span> <i class="fas fa-chevron-down dropdown-icon"></i></a>
                                 <ul class="dropdown-menu hidden">
-                                    <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> Galería</a></li>
-                                    <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> En vivo</a></li>
+                                    <li class="dropdown-item"><a href="grids.html" class="nav-link"><i class="fas fa-chevron-right"></i> Galería</a></li>
+                                    <li class="dropdown-item"><a href="comunicados.html" class="nav-link"><i class="fas fa-chevron-right"></i>Comunicados</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-link"><i class="fas fa-calendar-day"></i><span>Eventos</span> <i class="fas fa-chevron-down dropdown-icon"></i></a>
                                 <ul class="dropdown-menu hidden">
                                     <li class="dropdown-item"><a href="actividades.html" class="nav-link"><i class="fas fa-chevron-right"></i> Actividades</a></li>
-                                    <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> Horarios de Misa</a></li>
+                                    <li class="dropdown-item"><a href="horario.html" class="nav-link"><i class="fas fa-chevron-right"></i> Horarios de Misa</a></li>
                                     <li class="dropdown-item"><a href="formaciones.html" class="nav-link"><i class="fas fa-chevron-right"></i> Formaciones</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item"><a href="Oracion.html" class="nav-link"><i class="fas fa-pray"></i><span>Oraciones</span></a></li>
-                            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-hand-holding-heart"></i><span>Contacto</span></a></li>
+                            <li class="nav-item"><a href="contacto.html" class="nav-link"><i class="fas fa-hand-holding-heart"></i><span>Contacto</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -108,9 +108,9 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     const navLink = document.querySelectorAll('.nav-item > .nav-link:first-child');
     const tipo = document.getElementById('tipo');
-
     let j = 0;
     j = getActualLink(tipo.className.toString(),navLink);
+    
     navLink[j].classList.add('active');
 
 });
@@ -128,7 +128,6 @@ function getActualLink(cName, navLink){
             break;
         }
     }
-
     return j;
 }
 
