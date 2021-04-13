@@ -29,8 +29,8 @@ class Navbar extends HTMLElement{
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-link"><i class="fas fa-bible"></i><span>Nosotros</span> <i class="fas fa-chevron-down dropdown-icon"></i></a>
                                 <ul class="dropdown-menu hidden">
-                                    <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> ¿Quienes Somos?</a></li>
-                                    <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> Historia</a></li>
+                                    <li class="dropdown-item"><a href="quienes_somos.html" class="nav-link"><i class="fas fa-chevron-right"></i> ¿Quienes Somos?</a></li>
+                                    <li class="dropdown-item"><a href="Historia.html" class="nav-link"><i class="fas fa-chevron-right"></i> Historia</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -45,10 +45,10 @@ class Navbar extends HTMLElement{
                                 <ul class="dropdown-menu hidden">
                                     <li class="dropdown-item"><a href="actividades.html" class="nav-link"><i class="fas fa-chevron-right"></i> Actividades</a></li>
                                     <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> Horarios de Misa</a></li>
-                                    <li class="dropdown-item"><a href="" class="nav-link"><i class="fas fa-chevron-right"></i> Formaciones</a></li>
+                                    <li class="dropdown-item"><a href="formaciones.html" class="nav-link"><i class="fas fa-chevron-right"></i> Formaciones</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-pray"></i><span>Oraciones</span></a></li>
+                            <li class="nav-item"><a href="Oracion.html" class="nav-link"><i class="fas fa-pray"></i><span>Oraciones</span></a></li>
                             <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-hand-holding-heart"></i><span>Contacto</span></a></li>
                         </ul>
                     </div>

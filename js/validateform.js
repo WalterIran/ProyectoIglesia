@@ -48,12 +48,12 @@ document.addEventListener("DOMContentLoaded", function() {
         var value = e.target.value;
         if (!idRegex.test(value)) {
             txtId.classList.add("error");
-            txtIdError.classList.remove("hidden");
+            txtIdError.classList.remove("hiddenk");
             txtIdError.innerHTML = "Debe ingresar una identidad válida.";
             txtIdHasErrors = true;
         } else {
             txtId.classList.remove("error");
-            txtIdError.classList.add("hidden");
+            txtIdError.classList.add("hiddenk");
             txtIdError.innerHTML = "";
             txtIdHasErrors = false;
         }
@@ -64,12 +64,12 @@ document.addEventListener("DOMContentLoaded", function() {
         var value = e.target.value;
         if (!nameRegex.test(value) || emptyTextRegex.test(value)) {
             txtName.classList.add("error");
-            txtNameError.classList.remove("hidden");
+            txtNameError.classList.remove("hiddenk");
             txtNameError.innerHTML = "Ingresar nombre completo .";
             txtNameHasErrors = true;
         } else {
             txtName.classList.remove("error");
-            txtNameError.classList.add("hidden");
+            txtNameError.classList.add("hiddenk");
             txtNameError.innerHTML = "";
             txtNameHasErrors = false;
         }
@@ -80,12 +80,12 @@ document.addEventListener("DOMContentLoaded", function() {
         var value = e.target.value;
         if (!phoneRegex.test(value)) {
             txtPhone.classList.add("error");
-            txtPhoneError.classList.remove("hidden");
+            txtPhoneError.classList.remove("hiddenk");
             txtPhoneError.innerHTML = "Debe ingresar un número de teléno válido.";
             txtPhoneHasErrors = true;
         } else {
             txtPhone.classList.remove("error");
-            txtPhoneError.classList.add("hidden");
+            txtPhoneError.classList.add("hiddenk");
             txtPhoneError.innerHTML = "";
             txtPhoneHasErrors = false;
         }
@@ -96,12 +96,12 @@ document.addEventListener("DOMContentLoaded", function() {
         var value = e.target.value;
         if (('08:00' > value) && (value < '17:00')) {
             time.classList.add("error");
-            timeError.classList.remove("hidden");
+            timeError.classList.remove("hiddenk");
             timeError.innerHTML = "Escoger un horario entre 8:00am y 5:00pm.";
             timeHasErrors = true;
         } else {
             time.classList.remove("error");
-            timeError.classList.add("hidden");
+            timeError.classList.add("hiddenk");
             timeError.innerHTML = "";
             timeHasErrors = false;
         }
