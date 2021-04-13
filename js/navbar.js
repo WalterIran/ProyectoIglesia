@@ -3,7 +3,7 @@ class Navbar extends HTMLElement{
         this.innerHTML = `
             <header id="header" class="header">
             <div class="nav-img">
-                <img src="img/LogoSinFondo.png" alt="">
+            <a href="index.html"><img src="img/LogoSinFondo.png" alt=""></a>
             </div>
             <div class="header-toggle">
                 <i class="fas fa-bars rotateIz" id="header-toggle"></i>
