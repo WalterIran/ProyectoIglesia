@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/*Quienes Somos*/
+
+.back {
+    margin-top: 5rem;
+    top: 0px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: #000 2px 2px 10px;
+}
+
+.back-img {
+    position: flex;
+    background-color: #ccc;
+    width: 100%;
+    height: 30vh;
+    background-image: url("../img/Atrio-D.jpg");
+    filter: blur(0.5px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -10;
+    padding: 20px;
+    text-align: center;
+}
+
+.back h1 {
+    color: #eee;
+    text-align: center;
+}
+
+.sliderLens {
+    width: 100%;
+    height: 55vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.sliderTrail {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 20vh;
+    transition: left 1s ease-in-out;
+    left: 0vw;
+}
+
+.sliderFrame {
+    display: flex;
+    flex: 1;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sliderFrame img {
+    width: 60vw;
+}
+
+main {
+    min-height: calc(100vh);
+}
+
+.arrows {
+    background-color: #707070;
+    height: 100vw;
+    position: absolute;
+    top: calc(55%);
+}
+
+#arrowLeft,
+#arrowRight {
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+}
+
+.arrows img {
+    opacity: 30%;
+    transition: all 0.5s ease-in-out;
+}
+
+#arrowLeft {
+    position: absolute;
+    left: 85vw;
+}
+
+#arrowRight {
+    position: absolute;
+    left: 2vw;
+}
+
+.arrows img:hover {
+    opacity: 100%;
+    background-color: #707070;
+    transition: all 0.5s ease-in-out;
+}
+
+.circles {
+    width: 100vw;
+    position: absolute;
+    bottom: calc(5%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 40%;
+}
+
+.circle {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    margin: 0.15em 0.25em;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: background-color 0.7s ease-in-out;
+}
+
+.circle.selected {
+    background-color: #333;
+}
+
+.circle:hover {
+    transition: background-color 0.7s ease-in-out;
+    background-color: #000;
+}
+
+article {
+    margin: 1.5rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+article img {
+    height: 2.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paralax {
+    background-color: #333;
+    background-image: url("../img/SanFran-sm.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #eee;
+    height: 40vh;
+}
+
+@media(min-width: 700px) {
+    .back {
+        width: 100%;
+    }
+    .back-img {
+        height: 50vh;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .back h1 {
+        margin-top: 5rem;
+    }
+    #arrowRight {
+        left: calc(10vw);
+    }
+    .sliderLens {
+        height: 70vh;
+    }
+    .sliderTrail {
+        top: 35vh;
+    }
+    .paralax {
+        background-image: url("../img/SanFran_medio-lg.jpg");
+    }
+}
+
+@media(min-width: 1025px) {
+    .back {
+        top: 1rem;
+        width: 100%;
+    }
+    .back-img {
+        height: 60vh;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .back h1 {
+        margin-top: 5rem;
+    }
+    #arrowRight {
+        left: 9rem;
+    }
+    .sliderLens {
+        height: calc(100vh);
+    }
+    .sliderTrail {
+        top: 40vh;
+    }
+}

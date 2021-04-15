@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/*Formaciones*/
+
+main {
+    margin-top: 4rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+input,
+select,
+button,
+label,
+small {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+}
+
+
+/*FIELDS*/
+
+.identidad {
+    grid-area: id;
+}
+
+.identidad-i {
+    grid-area: id-i;
+}
+
+.nombre {
+    grid-area: name;
+}
+
+.nombre-i {
+    grid-area: name-i;
+}
+
+.telefono {
+    grid-area: tel;
+}
+
+.telefono-i {
+    grid-area: tel-i;
+}
+
+.formaciones {
+    grid-area: form;
+}
+
+.formaciones-i {
+    grid-area: form-i;
+}
+
+.fecha {
+    grid-area: date;
+}
+
+.fecha-i {
+    grid-area: date-i;
+}
+
+.fecha-s {
+    grid-area: date-s;
+}
+
+.hora {
+    grid-area: hour;
+}
+
+.hora-i {
+    grid-area: hour-i;
+}
+
+.hora-s {
+    grid-area: hour-s;
+}
+
+.boton {
+    grid-area: btn;
+}
+
+
+/*ERRORS*/
+
+.errorId {
+    grid-area: errorI;
+}
+
+.errorName {
+    grid-area: errorN;
+}
+
+.errorPhone {
+    grid-area: errorP;
+}
+
+.errorDate {
+    grid-area: errorD;
+}
+
+.errorTime {
+    grid-area: errorT;
+}
+
+
+/*TEMPLATE*/
+
+form {
+    background-color: #fdfdaf;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    display: grid;
+    grid-template-columns: 30% 20% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: "id . . ." "id-i id-i id-i ." "errorI errorI errorI errorI" "name name . ." "name-i name-i name-i name-i" "errorN errorN errorN errorN" "tel . . ." "tel-i tel-i . ." "errorP errorP errorP errorP" "form  . . ." "form-i form-i form-i ." "date . . ." "date-i date-i date-s date-s" "errorD errorD errorD errorD" "hour . . ." "hour-i hour-i hour-s hour-s" "errorT errorT errorT errorT" ". btn btn .";
+}
+
+.collage {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 5;
+    margin: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.collage h2 {
+    font-size: 1.5rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.collage img {
+    width: 45vw;
+}
+
+.collage article p {
+    text-align: justify;
+}
+
+input.error {
+    outline-color: #d30000d2;
+    outline-style: solid;
+    outline-width: 1px;
+}
+
+.text {
+    grid-column: span 2;
+}
+
+.hiddenk {
+    display: none;
+}
+
+button {
+    box-sizing: border-box;
+    border: 1px solid #333;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+
+button:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
+
+.error {
+    color: #d30000d2;
+}
+
+@media(min-width: 700px) {
+    .virgen {
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    form {
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-areas: "id id-i id-i id-i ." ". errorI errorI errorI  ." "name name-i name-i name-i name-i" ". errorN errorN errorN ." "tel tel-i form form-i form-i" ". errorP errorP errorP ." "date date-i date-i date-s date-s" ". errorD errorD errorD ." "hour hour-i hour-i hour-s hour-s" ". errorT errorT errorT ." ". . btn btn  .";
+    }
+}
+
+@media(min-width: 1025px) {
+    main {
+        margin-top: 5rem;
+    }
+    form {
+        width: 80vw;
+        margin: auto;
+        background-color: #C5FAFF;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-areas: "id id-i id-i . ." ". errorI errorI errorI  ." "name name-i name-i name-i ." ". errorN errorN errorN ." "tel tel-i form form-i form-i" ". errorP errorP errorP ." "date date-i date-i date-s date-s" ". errorD errorD errorD ." "hour hour-i hour-i hour-s hour-s" ". errorT errorT errorT ." ". . btn btn  .";
+    }
+}

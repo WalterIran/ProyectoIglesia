@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --title_backcolor: #fff2f2;
+    --title_fontcolor: #46d3e6;
+    --mistery_color: #3a19f7;
+    --mistery_size: 2.3rem;
+    --hailmary_color: #f52b2b;
+    --hailmary_size: 1.8rem;
+    --distance: 2rem;
+    --container-heigt: 5rem;
+}
+
+header h1 {
+    margin: 0px;
+    padding: 0.5rem;
+    background-color: var(--title_backcolor);
+    color: var(--title_fontcolor);
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.sacerdotes,
+.iglesia {
+    margin: 1px;
+    border: 1px solid #333;
+    box-shadow: 3px 3px #2e2e2e;
+    text-align: justify;
+}
+
+.sacerdotes img,
+.iglesia img {
+    display: block;
+    margin: auto;
+    margin-top: 0.5rem;
+    width: 250px;
+}
+
+.sacerdotes p,
+.iglesia p {
+    padding: 0px 3rem;
+    line-height: 1.5rem;
+}
+
+.container-otros-sacerdotes {
+    margin: 1px;
+    border: 1px solid #333;
+    box-shadow: 3px 3px #2e2e2e;
+    position: relative;
+    width: 99%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.otros-sacerdotes {
+    position: absolute;
+    display: flex;
+}
+
+.card-priest {
+    flex: 1;
+    position: relative;
+    width: 300px;
+    padding: 5px;
+    margin: 0px 1rem 0px 3.5rem;
+}
+
+.card-priest img {
+    position: relative;
+    left: 1.5rem;
+}
+
+.card-priest p {
+    text-align: justify;
+    margin-right: 2rem;
+}
+
+.arrow {
+    color: #333;
+    font-size: 3rem;
+    position: absolute;
+    margin-top: 40%;
+    transform: translate(0%, -80%);
+    padding: 12px;
+}
+
+.arrow:hover {
+    cursor: pointer;
+    background-color: #636363;
+}
+
+#next {
+    left: 100%;
+    transform: translate(-110%, -80%);
+    border-radius: 4px 0px 0px 4px;
+}
+
+#previous {
+    border-radius: 0px 4px 4px 0px;
+}
+
+@media (min-width: 700px) {
+    .sacerdotes img {
+        border-radius: 50%;
+    }
+    .iglesia img {
+        border-radius: 0%;
+        margin: 1rem;
+        padding: 3px;
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        float: right;
+        clip-path: polygon(72% 0, 31% 0, 43% 30%, 0 19%, 0 54%, 43% 42%, 31% 100%, 72% 100%, 59% 42%, 100% 53%, 100% 18%, 59% 30%);
+        shape-outside: polygon(72% 0, 31% 0, 43% 30%, 0 19%, 0 54%, 43% 42%, 31% 100%, 72% 100%, 59% 42%, 100% 53%, 100% 18%, 59% 30%);
+    }
+    .container-otros-sacerdotes {
+        max-height: 700px;
+    }
+    .card-priest img {
+        left: 9rem;
+        border-radius: 20%;
+    }
+    .arrow {
+        margin-top: 25%;
+        transform: translate(150%, -60%);
+        padding: 12px;
+    }
+    #next {
+        left: 100%;
+        transform: translate(-250%, -60%);
+        border-radius: 4px 0px 0px 4px;
+    }
+    #previous {
+        border-radius: 0px 4px 4px 0px;
+    }
+}
+
+@media (min-width: 1025px) {
+    h2 {
+        font-size: 3rem;
+    }
+    .sacerdotes,
+    .iglesia {
+        margin: 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .sacerdotes img {
+        margin: 1rem;
+        padding: 3px;
+        width: 450px;
+        height: 450px;
+        object-fit: cover;
+        float: left;
+        shape-outside: circle();
+    }
+    .iglesia img {
+        width: 450px;
+        height: 450px;
+    }
+    .sacerdotes p,
+    .iglesia p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .container-otros-sacerdotes {
+        margin: 1rem;
+        position: relative;
+        max-height: 600px;
+        width: calc(100vw - 2.5rem);
+    }
+    .card-priest img {
+        left: 0%;
+        border-radius: 25%;
+    }
+    .card-priest p {
+        font-size: 1.5rem;
+        position: absolute;
+        top: 15%;
+        left: 40%;
+        right: 5%;
+    }
+    .arrow {
+        margin-top: 7%;
+        transform: translate(0%, 70%);
+    }
+    #next {
+        left: 99%;
+        transform: translate(-110%, 70%);
+        border-radius: 4px 0px 0px 4px;
+    }
+}

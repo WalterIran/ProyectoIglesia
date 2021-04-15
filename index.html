@@ -1,16 +1,80 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/heart.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/b66c6a3e96.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Corazón de María</title>
 </head>
+
 <body id="tipo" class="inicio">
     <app-navbar></app-navbar>
+    <main>
+        
+        <section class="heropanel">
+            <div class="presentacion">
+                <div class="pre-content">
+                    <h1>
+                        <span>Iglesia Católica</span>
+                        <span>Corazón de María</span>
+                    </h1>
+                </div>
+                <div class="pre-logo">
+                    <img src="img/LogoSinFondo.png" alt="logo">
+                </div>
+            </div>
+            <div class="hero-img">
+                <picture>
+                    <source srcset="img/CorazonMaria_sinFondo_md.png" media="(min-width:600px)" />
+                    <img alt="Imágen de la Virgen" src="img/CorazonMaria_sinFondo_sm.png">
+                </picture>
+            </div>
+            <div class="cloud-scene">
+                <img class="cloud cloud1" src="img/cloud1.png" alt="nube">
+                <img class="cloud cloud2" src="img/cloud2.png" alt="nube">
+                <img class="cloud cloud3" src="img/cloud3.png" alt="nube">
+                <img class="cloud cloud4" src="img/cloud1.png" alt="nube">
+                <img class="cloud cloud5" src="img/cloud2.png" alt="nube">
+                <img class="cloud cloud6" src="img/cloud3.png" alt="nube">
+            </div>
+        </section>
+        <section class="exp-sanfrancisco">
+            <div class="san-francisco-img">
+                <picture>
+                    <source srcset="img/SanFrancisco_lg.jpg" media="(min-width:1025px)" />
+                    <source srcset="img/SanFrancisco_md.jpg" media="(min-width:600px)" />
+                    <img alt="Imágen del Artículo" src="img/SanFrancisco_sm.jpg" />
+                </picture>
+            </div>
+            <div class="content">
+                <h2>San Francisco de Asis</h2>
+                <p>Pertenecemos a la orden Franciscana y nuestro lema es Paz y Bien, nos caracterizamos espiritualmente de vivir el Evangelio, seguir a Jesucristo, vivir la pobreza y la fraternidad.</p>
+            </div>
+        </section>
+        <section class="experiencia">
+            <div class="iglesia-img">
+            </div>
+            
+            <div class="content">
+                <div>
+                    <h2>Apocalipsis 3:20</h2>
+                    <p>Mira que estoy a la puerta llamando. Si uno escucha mi llamada y abre la puerta, entraré en su casa y cenaré con él y él conmigo.</p>
+                </div>
+                <div>
+                    <h2>Experiencia</h2>
+                    <p>Vive la experiencia de recibir a Cristo en tu corazón y vivir una vida plena y llena de felicidad junto con nuestra comunidad.</p>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="js/navbar.js"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/heart.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b66c6a3e96.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/formaciones.css">
+    <title>Formaciones</title>
+</head>
+
+<body id="tipo" class="eventos">
+    <app-navbar></app-navbar>
+    <script src="js/navbar.js"></script>
+
+    <main>
+        <h1>Formaciones</h1>
+        <form action="formaciones.html" method="POST" id="form">
+
+            <label class="identidad" for="txtIdentidad">Identidad</label>
+            <input class="identidad-i" id="txtIdentidad" name="txtIdentidad" type="text" maxlength="13" placeholder="Ejem: 0801 1900 00103" />
+            <section class="errorId error hiddenk" id="txtIdError"></section>
+
+            <label class="nombre" for="txtName">Nombre Completo</label>
+            <input class="nombre-i" id="txtName" name="txtName" type="text" placeholder="Ejem: Jose Pedro Maradiaga" />
+            <section class="errorName error hiddenk" id="txtNameError"></section>
+
+            <label class="telefono" for="txtPhone">Teléfono</label>
+            <input class="telefono-i" id="txtPhone" name="txtPhone" type="tel" maxlength="8" placeholder="0000 0000" />
+            <section class="errorPhone error hiddenk" id="txtPhoneError"></section>
+
+            <label class="formaciones" for="cmbForm">Formaciones</label>
+            <select class="formaciones-i" id="cmbForm" name="cmbForm">
+                <option value="CTS">Catequesis</option>
+                <option value="PRC">Primera Comunión</option>
+                <option value="PRJ">Pastoral Juvenil</option>
+            </select>
+
+            <label class="fecha" for="fecha">Día</label>
+            <input class="fecha-i" type="date" id="date" name="fecha">
+            <small class="fecha-s">Reuniones de Lns - Dmg</small>
+            <section class="errorDate error hiddenk" id="dateError"></section>
+
+            <label class="hora" for="hora">Hora</label>
+            <input class="hora-i" type="time" id="time" name="hora">
+            <small class="hora-s">Horario de 8am a 5pm</small>
+            <section class="errorTime error hiddenk" id="timeError">Error ghhhhhhh</section>
+
+            <button id="btnSend" class="boton" type="submit" name="btnEnviar" value="ok" disabled>Enviar</button>
+        </form>
+        <section class="collage">
+            <h2>Nuestra Comunidad</h2>
+            <article class="virgen">
+                <picture>
+                    <source srcset="img/virgen5-lg.jpg" media="(min-width:1025px)" />
+                    <source srcset="img/virgen5-md.jpg" media="(min-width: 645px)" />
+                    <img alt="Virgen María" src="img/virgen5-sm.jpg" />
+                </picture>
+            </article>
+            <article>
+                <picture>
+                    <source srcset="img/ramos-lg.jpeg" media="(min-width:1025px)" />
+                    <source srcset="img/ramos-md.jpeg" media="(min-width: 645px)" />
+                    <img alt="Reunión frente a Iglesia" src="img/ramos-sm.jpeg" />
+                </picture>
+            </article>
+            <article>
+                <picture>
+                    <source srcset="img/ramos2-lg.jpg" media="(min-width:1025px)" />
+                    <source srcset="img/ramos2-md.jpg" media="(min-width: 645px)" />
+                    <img alt="Domingo de Ramos" src="img/ramos2-sm.jpg" />
+                </picture>
+            </article>
+            <article>
+                <picture>
+                    <source srcset="img/pand-lg.jpg" media="(min-width:1025px)" />
+                    <source srcset="img/pand-md.jpg" media="(min-width: 645px)" />
+                    <img alt="Reunion con medidas" src="img/pand-sm.jpg" />
+                </picture>
+            </article>
+            <article>
+                <picture>
+                    <source srcset="img/reun2-lg.jpg" media="(min-width:1025px)" />
+                    <source srcset="img/reun2-md.jpg" media="(min-width: 645px)" />
+                    <img alt="Misa con medidas de Bioseguridad" src="img/reun2-sm.jpg" />
+                </picture>
+            </article>
+            <article>
+                <picture>
+                    <source srcset="img/reun-lg.jpg" media="(min-width:1025px)" />
+                    <source srcset="img/reun-md.jpg" media="(min-width: 645px)" />
+                    <img alt="Reunion de pastoral juvenil" src="img/reun-sm.jpg" />
+                </picture>
+            </article>
+            <article class="text">
+                <p>Templo Católico "Corazón de María" Residencial Francisco Morazán, jurisdicción de la Parroquia San Maximiliano María Kolbe.
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="js/validateform.js"></script>
+</body>
+
+</html>

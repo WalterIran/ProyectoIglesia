@@ -1,0 +1,36 @@
+[
+    {
+        "Anio":"2020",
+        "slideFrame":[
+            {
+                "lg":"img/reun2-lg.jpg",
+                "md":"img/reun2-md.jpg",
+                "sm":"img/reun2-sm.jpg",
+                "date":"26/11/2020",
+                "title":"Misa de acción de gracias",
+                "description":"Asistiendo a misa con las medidas de bioseguridad para darle Gracias al Señor."
+            }
+        ]
+    },
+    {
+        "Anio":"2018",
+        "slideFrame":[
+            {
+                "lg":"img/domingo-ramos-lg.jpeg",
+                "md":"img/ramos2-md.jpg",
+                "sm":"img/ramos2-sm.jpg",
+                "date":"28/03/2018",
+                "title":"Domingo de Ramos",
+                "description":"Este domingo de ramos la pasamos bien junto con los hermanos de la Iglesia."
+            },
+            {
+                "lg":"img/ramos-lg.jpeg",
+                "md":"img/ramos-md.jpeg",
+                "sm":"img/ramos-sm.jpeg",
+                "date":"28/03/2018",
+                "title":"Domingo de Ramos",
+                "description":"Nuestras actividades de Domingo de Ramos son bastante dinámicas."
+            }
+        ]
+    }
+]
