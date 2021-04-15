@@ -3,12 +3,12 @@
         "Anio":"2020",
         "slideFrame":[
             {
-                "lg":"https://place-hold.it/1400x875",
-                "md":"https://place-hold.it/962x601",
-                "sm":"https://place-hold.it/480x480",
-                "date":"dd/mm/yyyy",
-                "title":"Lorem Ipsum",
-                "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet impedit beatae laudantium quos tempore maxime sit facere recusandae. Animi recusandae eos maiores tenetur amet repellendus suscipit veniam in, illum iure!"
+                "lg":"img/reun2-lg.jpg",
+                "md":"img/reun2-md.jpg",
+                "sm":"img/reun2-sm.jpg",
+                "date":"26/11/2020",
+                "title":"Misa de acción de gracias",
+                "description":"Asistiendo a misa con las medidas de bioseguridad para darle Gracias al Señor."
             }
         ]
     },
@@ -17,19 +17,19 @@
         "slideFrame":[
             {
                 "lg":"img/domingo-ramos-lg.jpeg",
-                "md":"https://place-hold.it/962x601",
-                "sm":"https://place-hold.it/480x480",
+                "md":"img/ramos2-md.jpg",
+                "sm":"img/ramos2-sm.jpg",
                 "date":"28/03/2018",
                 "title":"Domingo de Ramos",
                 "description":"Este domingo de ramos la pasamos bien junto con los hermanos de la Iglesia."
             },
             {
-                "lg":"https://place-hold.it/1400x875",
-                "md":"https://place-hold.it/962x601",
-                "sm":"https://place-hold.it/480x480",
-                "date":"dd/mm/yyyy",
-                "title":"Lorem Ipsum",
-                "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet impedit beatae laudantium quos tempore maxime sit facere recusandae. Animi recusandae eos maiores tenetur amet repellendus suscipit veniam in, illum iure!"
+                "lg":"img/ramos-lg.jpeg",
+                "md":"img/ramos-md.jpeg",
+                "sm":"img/ramos-sm.jpeg",
+                "date":"28/03/2018",
+                "title":"Domingo de Ramos",
+                "description":"Nuestras actividades de Domingo de Ramos son bastante dinámicas."
             }
         ]
     }
