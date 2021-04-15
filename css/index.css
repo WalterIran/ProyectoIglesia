@@ -189,24 +189,7 @@
     color:#fff;
 }
 
-footer{
-    background-color: #333;
-    color: #eee;
-    height: 50%;
-    width: 100%;
-    padding: 1rem;
-    padding-bottom: 0;
-    font-size: 1rem;
-    display: grid;
-    grid-template-columns: repeat(2,50%);
-    grid-template-rows: repeat(2,auto);
-    justify-content: center;
-    grid-gap: 1rem;
-}
 
-footer  a{
-    color: #aaa;
-}
 
 @media (min-width:600px){
     .heropanel{

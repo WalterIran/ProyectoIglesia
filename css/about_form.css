@@ -157,11 +157,6 @@ article img {
     height: 40vh;
 }
 
-footer {
-    background-color: aqua;
-    bottom: 0px;
-}
-
 @media(min-width: 700px) {
     .back {
         width: 100%;

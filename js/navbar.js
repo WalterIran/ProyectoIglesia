@@ -67,6 +67,19 @@ let page = path.split('/').pop();
 
 
 document.addEventListener("DOMContentLoaded",()=>{
+
+    document.getElementsByTagName('body')[0].innerHTML += 
+    `<footer>
+        <div class="ubicacion">
+            <h3>Visitanos</h3>
+            <p>Residencial Francisco Morazán, Ave. Paladín en la cuesta pasando la Calle 03 de Octubre a mano derecha. <a href="https://goo.gl/maps/auCrPK59DisrBznH8">Click aquí para abrir en Google Maps</a></p>
+        </div>
+        <div class="contacto">
+            <h3>Contacto</h3>
+            <p>Visita nuestra página de contacto al hacer <a href="contacto.html">click aquí</a>.</p>
+        </div>
+    </footer>`;
+
     const toggle = document.getElementById('header-toggle');
     const nav = document.getElementById('nav-menu');
     const hide = document.getElementById('hide');
