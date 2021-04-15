@@ -51,7 +51,7 @@
 }
 
 .sagradoCorazon {
-    background-image: url("../imagenesOptimizadas/SagradoCorazon.jpg");
+    background-image: url("../img/SagradoCorazon.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;
@@ -68,12 +68,12 @@
         order: 2
     }
     .sagradoCorazon {
-        background-image: url("../imagenesOptimizadas/SagradoCorazon.jpg");
+        background-image: url("../img/SagradoCorazon.jpg");
     }
 }
 
 @media (min-width:1200px) {
     .sagradoCorazon {
-        background-image: url("../imagenesOptimizadas/SagradoCorazon.jpg");
+        background-image: url("../img/SagradoCorazon.jpg");
     }
 }
