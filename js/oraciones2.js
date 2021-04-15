@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var forward = document.getElementById('forward');
     var playpause = document.getElementById('play-pause');
     var icon = document.getElementById('iconplay');
+
     var back = document.getElementById('back');
     var selection = document.getElementsByClassName("Select-Mistery")[0];
 
@@ -78,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
             goingback = 0;
             icon.src = 'img/pause.png';
 
+
             auto();
 
         } else {
@@ -98,6 +100,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         goingback = 0;
 
+        if (automatico == 1) {
+            clearTimeout(timerRef);
+        }
         SumarPosicion();
 
     });
@@ -108,6 +113,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         goingback = 1;
+
+        if (automatico == 1) {
+
+            icon.src = 'img/play.png';
+
+        }
         RestarPosicion();
 
     });
@@ -273,6 +284,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     function RestarPosicion() {
+
+
         conteogeneral -= 1;
 
 
@@ -455,7 +468,10 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
-
+        if (automatico == 1) {
+            automatico = 0;
+            clearTimeout(timerRef);
+        }
     } //Fin de Funcion Restar
 
     function Virtudes() {
@@ -570,6 +586,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function auto() {
         timerRef = setTimeout(SumarPosicion, time);
     }
+
 
 
 
