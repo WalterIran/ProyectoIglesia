@@ -204,23 +204,8 @@ footer{
     grid-gap: 1rem;
 }
 
-.redes{
-    grid-column: 1 / span 2;
-}
-
-.redes-links{
-    padding: .5rem;
-}
-
-.redes-links a{
-    text-decoration: none;
-    color: #eee;
-    font-size: 2rem;
-    margin: 0 .3rem 0 0;
-}
-
-.fa-facebook:hover{
-    color: #43609c;
+footer  a{
+    color: #aaa;
 }
 
 @media (min-width:600px){
