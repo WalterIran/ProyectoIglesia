@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 moveSliderTo(nextSlide);
                 tick();
             },
-            1000 //tiempo
+            5000 //tiempo
         );
     }
 

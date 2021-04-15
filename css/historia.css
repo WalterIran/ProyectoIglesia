@@ -30,6 +30,7 @@ h2 {
 .iglesia {
     margin: 1px;
     border: 1px solid #333;
+    box-shadow: 3px 3px #2e2e2e;
     text-align: justify;
 }
 
@@ -49,6 +50,7 @@ h2 {
 .container-otros-sacerdotes {
     margin: 1px;
     border: 1px solid #333;
+    box-shadow: 3px 3px #2e2e2e;
     position: relative;
     width: 99%;
     height: 100vh;
@@ -141,7 +143,7 @@ h2 {
 
 @media (min-width: 1025px) {
     h2 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     .sacerdotes,
     .iglesia {
@@ -164,73 +166,33 @@ h2 {
     }
     .sacerdotes p,
     .iglesia p {
-        font-size: 2.5rem;
-        line-height: 2.5rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
     .container-otros-sacerdotes {
         margin: 1rem;
         position: relative;
         max-height: 600px;
+        width: calc(100vw - 2.5rem);
     }
     .card-priest img {
         left: 0%;
         border-radius: 25%;
     }
     .card-priest p {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         position: absolute;
         top: 15%;
-        left: 20%;
+        left: 40%;
         right: 5%;
     }
     .arrow {
         margin-top: 7%;
-        transform: translate(0%, 10%);
+        transform: translate(0%, 70%);
     }
     #next {
         left: 99%;
-        transform: translate(-110%, 0%);
+        transform: translate(-110%, 70%);
         border-radius: 4px 0px 0px 4px;
     }
-    /*
-    .otros-sacerdotes {
-        position: absolute;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    
-    .card-priest {
-        position: relative;
-        width: 500px;
-        height: 500px;
-        padding: 1.5rem;
-        opacity: 1;
-    }
-    .card-priest picture,
-    .card-priest .text {
-        width: 85%;
-        margin: 0px;
-    }
-    .card-priest img {
-        border-radius: 25%;
-    }
-    .text {
-        padding: 0.5rem;
-        position: absolute;
-        top: 20%;
-        left: 7%;
-        text-align: justify;
-        opacity: 0;
-    }
-    .card-priest:hover img {
-        background: #ddd;
-        opacity: 0;
-        transition: 500ms ease;
-    }
-    .card-priest:hover .text {
-        background: #ddd;
-        opacity: 1;
-        transition: 500ms ease;
-    }
-    */
 }
